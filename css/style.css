@@ -20,6 +20,16 @@ h1{
   font-size: 3em;
   color: white;
 }
+button{
+  background: none;
+  color: #F75C03;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 .table-length{
   display: inline-block;
   width: 200px;
