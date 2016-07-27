@@ -3,10 +3,11 @@
 <head>
 <!-- EXTERNAL LIBRARIES -->
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Poiret+One' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 <!-- INTERNAL LIBRARIES -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<script src="js/calculator.js"></script>
+<script src="js/pomodoro.js"></script>
 
 <meta charset=utf-8 />
 <title>Pomodoro</title>
@@ -15,18 +16,23 @@
 <div class="container">
   <h1>pomodoro</h1>
 
-  <div class="table-length">
+  <div class="table-length prueba">
     <h3>break length</h3>
-    <p class="counter"><span class="timer-buttons" id="minus-break">-</span> 5 <span class="timer-buttons" id="plus-break">+</span></p>
+    <p class="counter" id="minus-break">-</p>
+    <p class="counter break"> 5 </p>
+    <p class="counter" id="plus-break">+</p>
   </div>
 
   <div class="table-length">
     <h3>session length</h3>
-    <p class="counter"><span class="timer-buttons" id="minus-time">-</span> 25 <span class="timer-buttons" id="plus-time">+</span></p>
+    <p class="counter" id="minus-work">-</p>
+    <p class="counter work"> 25 </p>
+    <p class="counter" id="plus-work">+</p>
   </div>
 
   <div class="rounded-timer">
-
+    <p class="title-section">Work time</p>
+    <p class="countdown">25</p>
   </div>
 
 </div>

@@ -1,6 +1,8 @@
 /**{
   border: solid 2px;
 }*/
+
+/************* possible colors #820263 *************/
 body{
   background-color: #291720;
 }
@@ -26,16 +28,6 @@ h3{
 p{
   margin: 1%;
 }
-span{
-  cursor: pointer;
-  height: 40px;
-  display: inline-block;
-  vertical-align: bottom;
-  line-height: 60px;
-}
-.timer-buttons{
-  vertical-align: bottom;
-}
 .table-length{
   display: inline-block;
   width: 200px;
@@ -43,11 +35,20 @@ span{
   padding: 0;
 }
 .counter{
+  display: inline;
+  cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-size: 1.7em;
   font-weight: 700;
   vertical-align: bottom;
+  line-height: 60px;
 }
-.rounded-timer{
-
+.title-section{
+  font-size: 3em;
+  margin-top: 30px;
+}
+.countdown{
+  color: white;
+  margin-top: 30px;
+  font-size: 7em;
 }
