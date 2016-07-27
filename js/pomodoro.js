@@ -3,8 +3,10 @@ $(document).ready(function(){
   var selectWork = parseInt($(".work").text());
 
   $("#minus-break").click(function(){
-    selectBreak -= 1;
-    $(".break").html(selectBreak);
+    if(selectBreak >1){
+      selectBreak -= 1;
+      $(".break").html(selectBreak);
+    }
   })
 
   $("#plus-break").click(function(){
@@ -13,8 +15,10 @@ $(document).ready(function(){
   })
 
   $("#minus-work").click(function(){
-    selectWork -= 1;
-    $(".work").html(selectWork);
+    if(selectWork >1){
+      selectWork -= 1;
+      $(".work").html(selectWork);
+    }
   })
 
   $("#plus-work").click(function(){
