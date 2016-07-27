@@ -1,0 +1,22 @@
+*{
+  border: solid 2px;
+}
+body{
+  background-color: #412722;
+}
+.container{
+  font-family: 'Poiret One', cursive;
+  margin: 0 auto;
+  padding-top: 2%;
+  text-align: center;
+  width: 50%;
+  color: #86BA90;
+}
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+}
+.table-length{
+  display: inline-flex;
+  text-align: center;
+}
