@@ -58,3 +58,6 @@ p{
   margin-top: 30px;
   font-size: 7em;
 }
+.rounded-timer{
+  cursor: pointer;
+}

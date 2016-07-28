@@ -28,6 +28,9 @@ $(document).ready(function(){
     $(".countdown").html(selectWork);
   })
 
-
+  $(".rounded-timer").click(function(){
+    var time = selectWork * 60;
+    console.log(time);
+  })
 
 })
