@@ -18,12 +18,16 @@ $(document).ready(function(){
     if(selectWork >1){
       selectWork -= 1;
       $(".work").html(selectWork);
+      $(".countdown").html(selectWork);
     }
   })
 
   $("#plus-work").click(function(){
     selectWork += 1;
     $(".work").html(selectWork);
+    $(".countdown").html(selectWork);
   })
+
+
 
 })
