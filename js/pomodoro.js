@@ -1,6 +1,7 @@
 $(document).ready(function(){
   var selectBreak = parseInt($(".break").text());
   var selectWork = parseInt($(".work").text());
+  var time = selectWork * 60;
 
   $("#minus-break").click(function(){
     if(selectBreak >1){
@@ -29,8 +30,15 @@ $(document).ready(function(){
   })
 
   $(".rounded-timer").click(function(){
-    var time = selectWork * 60;
-    console.log(time);
+    var minutes = 0;
+    var seconds = 0;
+    while (time >= 0){2
+      time -= 1;
+      minutes = Math.floor(time / 60);
+      seconds = time - (minutes * 60);
+      $(".countdown").html(minutes + ":" + seconds);
+    }
+
   })
 
 })
