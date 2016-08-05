@@ -6,14 +6,19 @@ $(document).ready(function(){
   var countdownStarted = false;
   var countId;
 
+  ///////////////// FUNCTIONS FOR STARTING/STOPPING COUNTDOWN /////////////////
+
   function countdownStart() {
+    //starts the setInterval method and calls the function (updateCountdown) that works out the countdown
     countId = setInterval(updateCountdown, 1000);
   }
 
   function countdownStop() {
+    //stops the setInterval method
     clearInterval(countId);
   }
 
+// function that makes the countdown //
   function updateCountdown() {
     var min = Math.floor(time / 60);
     var sec = time - (min * 60);
@@ -27,6 +32,8 @@ $(document).ready(function(){
     $(".countdown").html(timerText);
     time -= 1;
   }
+
+///////////////// BREAK PLUS/MINUS SIGNS /////////////////
 
   $("#minus-break").click(function(){
     if (!loop){
@@ -43,6 +50,8 @@ $(document).ready(function(){
       $(".break").html(selectBreak);
     }
   })
+
+///////////////// WORKING PLUS/MINUS SIGNS /////////////////
 
   $("#minus-work").click(function(){
     if (!loop){
@@ -64,14 +73,14 @@ $(document).ready(function(){
     }
   })
 
+///////////////// TIMER ONCLICK EVENTS  /////////////////
+
   $(".rounded-timer").click(function(){
     if (loop) {
-      console.log("debo parar");
       countdownStop();
       loop = false;
     }
     else {
-      console.log("debo seguir");
       if (!countdownStarted) {
         // get time from html
         time = parseInt($(".countdown").text()) * 60;
