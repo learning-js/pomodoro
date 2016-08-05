@@ -28,6 +28,9 @@ h3{
 p{
   margin: 1%;
 }
+hr{
+  border-color: #F75C03;
+}
 .table-length{
   display: inline-block;
   width: 200px;
