@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- EXTERNAL LIBRARIES -->
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Poiret+One' rel='stylesheet' type='text/css'>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <head>
+  <!-- EXTERNAL LIBRARIES -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Poiret+One' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
-<!-- INTERNAL LIBRARIES -->
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<script src="js/pomodoro.js"></script>
+  <!-- INTERNAL LIBRARIES -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/pomodoro.js"></script>
 
-<meta charset=utf-8 />
-<title>Pomodoro</title>
-</head>
-<body>
-<div class="container">
-  <h1>pomodoro</h1>
+  <meta charset=utf-8 />
+  <title>Pomodoro</title>
+  </head>
 
-  <div class="table-length prueba">
-    <h3>break length</h3>
-    <p class="counter" id="minus-break">-</p>
-    <p class="counter break"> 5 </p>
-    <p class="counter" id="plus-break">+</p>
-  </div>
+  <body>
 
-  <div class="table-length">
-    <h3>session length</h3>
-    <p class="counter" id="minus-work">-</p>
-    <p class="counter work"> 10 </p>
-    <p class="counter" id="plus-work">+</p>
-  </div>
+    <div class="container borders">
 
-  <hr>
+      <h1>pomodoro</h1>
 
-  <div class="rounded-timer">
-    <p class="title-section">Work time</p>
-    <p class="countdown">10</p>
-  </div>
+      <div class="table-length prueba">
+        <h3>break length</h3>
+        <p class="counter" id="minus-break">-</p>
+        <p class="counter break"> 5 </p>
+        <p class="counter" id="plus-break">+</p>
+      </div>
 
-</div>
-</body>
+      <div class="table-length">
+        <h3>session length</h3>
+        <p class="counter" id="minus-work">-</p>
+        <p class="counter work"> 10 </p>
+        <p class="counter" id="plus-work">+</p>
+      </div>
+
+      <hr>
+
+      <div class="rounded-timer">
+        <div class="filling">
+          <p class="title-section">Work time</p>
+          <p class="countdown">10</p>
+        </div>
+      </div>
+      <div class ="bg-special">
+      </div>
+
+    </div>
+
+  </body>
 </html>
