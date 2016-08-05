@@ -3,6 +3,8 @@ $(document).ready(function(){
   var selectWork = parseInt($(".work").text());
   var time;
   var loop = false;
+  var workTime = false;
+  var breakTime = false;
   var countdownStarted = false;
   var countId;
 
@@ -20,6 +22,12 @@ $(document).ready(function(){
 
 // function that makes the countdown //
   function updateCountdown() {
+    if (time == 0){
+      console.log("entro a break time");
+      time = parseInt($(".break").text()) * 60;
+      console.log(time);
+      $(".title-section").html("Break time");
+    }
     var min = Math.floor(time / 60);
     var sec = time - (min * 60);
     if (min < 10){
