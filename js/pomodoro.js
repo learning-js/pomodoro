@@ -4,7 +4,6 @@ $(document).ready(function(){
   var time;
   var loop = false;
   var workTime = false;
-  var breakTime = false;
   var countdownStarted = false;
   var countId;
 
@@ -22,11 +21,15 @@ $(document).ready(function(){
 
 // function that makes the countdown //
   function updateCountdown() {
-    if (time == 0){
-      console.log("entro a break time");
+    if (time == 0 && workTime){
       time = parseInt($(".break").text()) * 60;
-      console.log(time);
       $(".title-section").html("Break time");
+      workTime = false;
+    }
+    if (time == 0 && !workTime){
+      time = parseInt($(".work").text()) * 60;
+      $(".title-section").html("Work time");
+      workTime = true;
     }
     var min = Math.floor(time / 60);
     var sec = time - (min * 60);
@@ -90,9 +93,9 @@ $(document).ready(function(){
     }
     else {
       if (!countdownStarted) {
-        // get time from html
-        time = parseInt($(".countdown").text()) * 60;
+        workTime = true;
         countdownStarted = true;
+        time = parseInt($(".countdown").text()) * 60;
         updateCountdown();
       }
       countdownStart();
