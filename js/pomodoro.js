@@ -84,6 +84,8 @@ $(document).ready(function(){
         $(".work").html(selectWork);
         $(".countdown").html(selectWork);
         position = 45;
+        $(".title-section").html("Work time");
+        $(".bg-special").css("background-color", "#820263");
         countdownStarted = false;
       }
     }
@@ -95,6 +97,8 @@ $(document).ready(function(){
       $(".work").html(selectWork);
       $(".countdown").html(selectWork);
       position = 45;
+      $(".title-section").html("Work time");
+      $(".bg-special").css("background-color", "#820263");
       countdownStarted = false;
     }
   })
