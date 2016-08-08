@@ -83,6 +83,7 @@ $(document).ready(function(){
         selectWork -= 1;
         $(".work").html(selectWork);
         $(".countdown").html(selectWork);
+        position = 45;
         countdownStarted = false;
       }
     }
@@ -93,6 +94,7 @@ $(document).ready(function(){
       selectWork += 1;
       $(".work").html(selectWork);
       $(".countdown").html(selectWork);
+      position = 45;
       countdownStarted = false;
     }
   })
