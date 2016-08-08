@@ -20,6 +20,8 @@ $(document).ready(function(){
   }
 
 // function that makes the countdown //
+    //// Total pixels to fill the space in countdown: 288px
+    //// Position hidden: 45px - Position full: -243px
   function updateCountdown() {
     if (time == 0 && workTime){
       time = parseInt($(".break").text()) * 60;
