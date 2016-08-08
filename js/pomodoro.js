@@ -37,7 +37,7 @@ $(document).ready(function(){
       time = parseInt($(".work").text()) * 60;
       fillingBg = 288 / time;
       position = 45;
-      $(".bg-special").css("background-color", "#4b2a3b");
+      $(".bg-special").css("background-color", "#820263");
       $(".title-section").html("Work time");
       workTime = true;
     }
