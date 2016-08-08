@@ -29,7 +29,7 @@ $(document).ready(function(){
       time = parseInt($(".break").text()) * 60;
       fillingBg = 288 / time;
       position = 45;
-      $(".bg-special").css("background-color", "#c6e903");
+      $(".bg-special").css("background-color", "#9DDA52");
       $(".title-section").html("Break time");
       workTime = false;
     }
