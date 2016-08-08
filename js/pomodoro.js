@@ -64,6 +64,9 @@ $(document).ready(function(){
       if(selectBreak >1){
         selectBreak -= 1;
         $(".break").html(selectBreak);
+        if(!workTime){
+          $(".countdown").html(selectBreak);
+        }
       }
     }
   })
@@ -72,6 +75,9 @@ $(document).ready(function(){
     if (!loop){
       selectBreak += 1;
       $(".break").html(selectBreak);
+      if(!workTime){
+        $(".countdown").html(selectBreak);
+      }
     }
   })
 
