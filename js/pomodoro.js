@@ -6,6 +6,8 @@ $(document).ready(function(){
   var workTime = false;
   var countdownStarted = false;
   var countId;
+  var fillingBg;
+  var position = 45;
 
   ///////////////// FUNCTIONS FOR STARTING/STOPPING COUNTDOWN /////////////////
 
@@ -25,11 +27,17 @@ $(document).ready(function(){
   function updateCountdown() {
     if (time == 0 && workTime){
       time = parseInt($(".break").text()) * 60;
+      fillingBg = 288 / time;
+      position = 45;
+      $(".bg-special").css("background-color", "#c6e903");
       $(".title-section").html("Break time");
       workTime = false;
     }
     if (time == 0 && !workTime){
       time = parseInt($(".work").text()) * 60;
+      fillingBg = 288 / time;
+      position = 45;
+      $(".bg-special").css("background-color", "#4b2a3b");
       $(".title-section").html("Work time");
       workTime = true;
     }
@@ -42,7 +50,10 @@ $(document).ready(function(){
       sec = "0" + sec;
     }
     var timerText = min + ":" + sec;
+    position -= fillingBg;
+    var positionString = position + "px";
     $(".countdown").html(timerText);
+    $(".bg-special").css("margin-top", positionString);
     time -= 1;
   }
 
@@ -98,6 +109,7 @@ $(document).ready(function(){
         workTime = true;
         countdownStarted = true;
         time = parseInt($(".countdown").text()) * 60;
+        fillingBg = 288 / time;
         updateCountdown();
       }
       countdownStart();
